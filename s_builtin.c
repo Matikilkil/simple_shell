@@ -6,12 +6,12 @@
  * Return: Exits the shell with:
  * - 0 if info->argv[0] is not "exit"
  * - -2 if an exit argument is provided
- *
-/int _myexit(info_t *info)
+ */
+int _myexit(info_t *info)
 {
 	int exitcheck;
 
-	if (info->argv[1]) /* If there is an exit arguement */
+	if (info->argv[1])
 	{
 		exitcheck = _erratoi(info->argv[1]);
 		if (exitcheck == -1)
@@ -28,6 +28,7 @@
 	info->err_num = -1;
 	return (-2);
 }
+
 /**
  * _mycd - Changes the current directory of the process.
  * @info: Structure with potential arguments.
