@@ -2,8 +2,8 @@
 
 /**
  * _myhistory - it display one command by line, history list, preceded
- *              with line numbers, starting at 0.
- * @info: Structure containing potential arguments
+ *              with line numbers, starting at 0
+ * @info: the structure containing potential arguments
  *  Return: Always 0
  */
 int _myhistory(info_t *info)
@@ -15,7 +15,7 @@ int _myhistory(info_t *info)
 /**
  * unset_alias - it set alias to string
  * @info: parameter struct
- * @str: the string alias
+ * @str: string alias
  *
  * Return: Always 0 on success, 1 on error
  */
@@ -37,9 +37,8 @@ int unset_alias(info_t *info, char *str)
 
 /**
  * set_alias - it sets alias to string
- * @info: the parameter struct
- * @str: the string alias
- *
+ * @info: parameter struct
+ * @str: string alias
  * Return: Always 0 on success, 1 on error
  */
 int set_alias(info_t *info, char *str)
@@ -58,7 +57,7 @@ int set_alias(info_t *info, char *str)
 
 /**
  * print_alias - it print alias string
- * @node: the alias node
+ * @node: alias node
  * Return: Always 0 on success, 1 on error
  */
 int print_alias(list_t *node)
