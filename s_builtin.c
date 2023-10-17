@@ -6,8 +6,8 @@
  * Return: Exits the shell with:
  * - 0 if info->argv[0] is not "exit"
  * - -2 if an exit argument is provided
- *
-/int _myexit(info_t *info)
+ */
+int _myexit(info_t *info)
 {
 	int exitcheck;
 
