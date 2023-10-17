@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _erratoi – changes a string to an integer
+ * _erratoi – function that changes string to an integer
  * @s: the string to be changed
  * Return: 0 if no numbers in string, converted number otherwise
  *       -1 on error
@@ -47,10 +47,9 @@ void print_error(info_t *info, char *estr)
 }
 
 /**
- * print_d – The function prints a decimal number (base 10)
- * @input: the input
- * @fd: the filedescriptor to write to
- *
+ * print_d – prints decimal numbers (base 10)
+ * @input: input
+ * @fd: filedescriptor to write to
  * Return: number of characters printed
  */
 int print_d(int input, int fd)
@@ -122,9 +121,8 @@ char *convert_number(long int num, int base, int flags)
 }
 
 /**
- * remove_comments - function takes the place of the  first instance of '#' with '\0'
+ * remove_comments - function takes place of first instance of '#' with '\0'
  * @buf: address of the string to modify
- *
  * Return: Always 0;
  */
 void remove_comments(char *buf)
