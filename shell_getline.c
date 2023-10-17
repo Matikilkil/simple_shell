@@ -24,7 +24,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 #else
 		read_bytes = _getline(info, buf, &len_p);
 #endif
-		if (read_bytes >)
+		if (read_bytes > 0)
 		{
 			if ((*buf)[read_bytes - 1] == '\n') 
 			{
